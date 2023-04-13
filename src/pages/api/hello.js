@@ -1,5 +1,9 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
 export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
+  const data = [
+    { id: 1, name: "Item 1" },
+    { id: 2, name: "Item 2" },
+    { id: 3, name: "Item 3" },
+  ];
+
+  res.status(200).json(data);
 }
