@@ -6,7 +6,7 @@ export default function Home() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("/api/hello");
+      const response = await fetch("/api/data");
       const jsonData = await response.json();
       setData(jsonData);
     } catch (error) {
