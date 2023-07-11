@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Head from "next/head";
 
 export default function Home() {
@@ -20,6 +21,15 @@ export default function Home() {
 
   return (
     <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          padding: 12,
+        }}
+      >
+        <ConnectButton />
+      </div>
       <Head>
         <title>My Next.js App</title>
         <meta name="description" content="A simple Next.js application" />
@@ -27,7 +37,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>
+        <h1 class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
           Welcome to my <a href="https://nextjs.org">Next.js</a> app!
         </h1>
 
