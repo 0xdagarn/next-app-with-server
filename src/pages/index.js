@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   const [data, setData] = useState(null);
@@ -21,20 +22,13 @@ export default function Home() {
 
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "flex-end",
-          padding: 12,
-        }}
-      >
-        <ConnectButton />
-      </div>
       <Head>
         <title>My Next.js App</title>
         <meta name="description" content="A simple Next.js application" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Link href="/test">test!</Link>
 
       <main>
         <h1 class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
